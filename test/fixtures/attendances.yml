@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studentid: 1
+  sPresent: 
+  attendenceDate: 2016-04-20 22:26:11
+  classId: 1
+
+two:
+  studentid: 1
+  sPresent: 
+  attendenceDate: 2016-04-20 22:26:11
+  classId: 1

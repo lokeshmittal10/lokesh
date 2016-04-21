@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  examid: 1
+  studentid: 1
+  questionid: 1
+  answerId: 1
+  mark: 1
+
+two:
+  examid: 1
+  studentid: 1
+  questionid: 1
+  answerId: 1
+  mark: 1

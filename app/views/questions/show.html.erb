@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @question.text %>
+</p>
+
+<p>
+  <strong>Answerid:</strong>
+  <%= @question.answerId %>
+</p>
+
+<p>
+  <strong>Subjectid:</strong>
+  <%= @question.subjectId %>
+</p>
+
+<p>
+  <strong>Classid:</strong>
+  <%= @question.classid %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

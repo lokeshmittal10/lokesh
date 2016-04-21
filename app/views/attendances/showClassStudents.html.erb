@@ -1,0 +1,23 @@
+<h1>New Attendance</h1>
+<div id="test">
+<%= form_tag :action => 'create' do %>
+<%= submit_tag "create" %>
+<table>
+  <thead>
+    <tr>
+      <th>Student name</th>
+      <th>Is Present</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><input type = "checkbox" id = "sPresent" name = "sPresent+<%= student.id %>"></td> 		
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<% end -%>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Student Answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Examid</th>
+      <th>Studentid</th>
+      <th>Questionid</th>
+      <th>Answerid</th>
+      <th>Mark</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student_answers.each do |student_answer| %>
+      <tr>
+        <td><%= student_answer.examid %></td>
+        <td><%= student_answer.studentid %></td>
+        <td><%= student_answer.questionid %></td>
+        <td><%= student_answer.answerId %></td>
+        <td><%= student_answer.mark %></td>
+        <td><%= link_to 'Show', student_answer %></td>
+        <td><%= link_to 'Edit', edit_student_answer_path(student_answer) %></td>
+        <td><%= link_to 'Destroy', student_answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Student answer', new_student_answer_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Examid:</strong>
+  <%= @student_answer.examid %>
+</p>
+
+<p>
+  <strong>Studentid:</strong>
+  <%= @student_answer.studentid %>
+</p>
+
+<p>
+  <strong>Questionid:</strong>
+  <%= @student_answer.questionid %>
+</p>
+
+<p>
+  <strong>Answerid:</strong>
+  <%= @student_answer.answerId %>
+</p>
+
+<p>
+  <strong>Mark:</strong>
+  <%= @student_answer.mark %>
+</p>
+
+<%= link_to 'Edit', edit_student_answer_path(@student_answer) %> |
+<%= link_to 'Back', student_answers_path %>

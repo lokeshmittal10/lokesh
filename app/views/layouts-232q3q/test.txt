@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Class Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+   
+      <tr>
+        <td><%= link_to 'Index', class_info %>class action</td>
+        <td><%= link_to 'Index', student %>student action</td>
+		 <td><%= link_to 'Index', attendance %>attendence action</td>
+		  <td><%= link_to 'Index', subject %>subject action</td>
+		   <td><%= link_to 'Index', exam %>exam action</td>
+				   		   <td><%= link_to 'Index', result %>result action</td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Inside Application Class info', new_class_info_path %>

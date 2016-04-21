@@ -1,0 +1,13 @@
+<h1>New Attendance</h1>
+
+<% if !@students %>
+<%= form_tag :action => 'showClassStudents' do %>
+<%= submit_tag "showClassStudents" %>
+<p><label for = "classId">Select Class to take attendance</label>:
+
+<%= collection_select(:attendance, :classId, @classInfo, :id, :name, prompt: true) %></p>
+
+<% end -%>
+<% else %>
+
+<% end %>

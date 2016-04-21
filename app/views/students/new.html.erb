@@ -1,0 +1,15 @@
+<h1>Add new Student</h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "name">Student name</label>:
+
+<%= text_field 'student', 'name' %></p>
+<%= submit_tag "Create" %>
+<p><label for = "classId">Class</label>:
+
+<%= collection_select(:student, :classId, @classInfo, :id, :name, prompt: true) %></p>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'list'} %>
+
+<%= link_to 'Back', students_path %>
